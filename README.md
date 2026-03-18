@@ -24,6 +24,11 @@ Durante o desenvolvimento, foram realizadas as seguintes melhorias técnicas:
 - Node.js instalado
 - NPM instalado
 
+### Clonar o repositório
+```bash
+git clone https://github.com/rubenfabio/full-cycle-3-ddd-patterns.git
+```
+
 ### Instalação de dependências
 Execute o comando abaixo na raiz do projeto:
 ```bash
