@@ -27,7 +27,7 @@ Durante o desenvolvimento, foram realizadas as seguintes melhorias técnicas:
 
 ### Clonar o repositório
 ```bash
-git clone https://github.com/rubenfabio/full-cycle-3-ddd-patterns.git
+git clone https://github.com/rubenfabio/full-cycle-3-ddd-patterns-desafio-domain-events.git
 ```
 
 ### Instalação de dependências
