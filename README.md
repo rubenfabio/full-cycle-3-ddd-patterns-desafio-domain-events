@@ -2,15 +2,16 @@
 
 Este projeto faz parte do curso Full Cycle 3.0 e foca na implementação de padrões de Domain Driven Design (DDD) em TypeScript.
 
-## Desafio: Implementação de OrderRepository
+## Desafio: Domain Events do Customer
 
-O objetivo deste desafio foi completar a implementação do `OrderRepository` seguindo os conceitos de DDD e TDD.
+Implementação do padrão Domain Events para o agregado `Customer`, garantindo que o sistema reage a mudanças de estado (criação e alteração de endereço).
 
-### Métodos Implementados:
-- `create`: Criação de um novo pedido com seus itens.
-- `update`: Atualização de um pedido existente e seus itens (utilizando transações para garantir consistência).
-- `find`: Localização de um pedido pelo ID, incluindo seus itens.
-- `findAll`: Listagem de todos os pedidos cadastrados.
+### Eventos Implementados:
+- `CustomerCreated`: Disparado na criação de um novo cliente.
+    - `EnviaConsoleLog1Handler`: Exibe o primeiro log de criação.
+    - `EnviaConsoleLog2Handler`: Exibe o segundo log de criação.
+- `CustomerAddressChanged`: Disparado quando o endereço é alterado.
+    - `EnviaConsoleLogHandler`: Exibe log com ID, Nome e novo Endereço.
 
 ## Segurança e Compatibilidade
 
@@ -44,6 +45,11 @@ npm test
 Para rodar os testes em modo verbose e sem cache:
 ```bash
 npx jest --verbose --no-cache
+```
+
+Para rodar apenas os testes de eventos de Customer:
+```bash
+npm test src/domain/customer/event/customer-events.spec.ts
 ```
 
 ## Autor
