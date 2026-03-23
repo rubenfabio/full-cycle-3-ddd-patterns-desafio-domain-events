@@ -17,7 +17,6 @@ Implementação do padrão Domain Events para o agregado `Customer`, garantindo 
 
 Durante o desenvolvimento, foram realizadas as seguintes melhorias técnicas:
 - **Segurança**: Os pacotes `sqlite3` e `typescript` foram atualizados para versões mais recentes para mitigar vulnerabilidades críticas relatadas pelo `npm audit`.
-- **Compatibilidade Jest 30**: A versão do Jest utilizada no projeto removeu o alias `toThrowError`. Todas as ocorrências foram atualizadas para `toThrow` para garantir que os testes continuem funcionando corretamente.
 
 ## Como rodar o projeto
 

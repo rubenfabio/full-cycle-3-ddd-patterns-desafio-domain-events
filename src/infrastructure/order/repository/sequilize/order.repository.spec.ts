@@ -183,7 +183,7 @@ describe("Order repository test", () => {
   it("should throw an error when order is not found", async () => {
     const orderRepository = new OrderRepository();
 
-    await expect(orderRepository.find("ABC")).rejects.toThrow("Order not found");
+    await expect(orderRepository.find("ABC")).rejects.toThrowError("Order not found");
   });
 
   it("should return an empty array when no orders are found", async () => {
